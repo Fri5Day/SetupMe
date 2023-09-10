@@ -17,8 +17,20 @@ const routes = [
 
       {
         path: '/MontagemProfissional',
-        name: 'MontagemProfissional',
+        name: 'ProfessionalAssembly',
         component: () => import('@/views/ProfessionalAssembly.vue'),
+      },
+
+      {
+        path: '/MontagemGamer',
+        name: 'GamerAssembly',
+        component: () => import('@/views/GamerAssembly.vue'),
+      },
+
+      {
+        path: '/Simulador',
+        name: 'Simulator',
+        component: () => import('@/views/Simulator.vue'),
       },
     ],
   },

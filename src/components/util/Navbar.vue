@@ -8,7 +8,7 @@
         </template>
 
         <v-list-item>
-          <v-btn flat>Montagem Gamer</v-btn>
+          <v-btn flat @click="clickGamer()">Montagem Gamer</v-btn>
         </v-list-item>
 
         <v-list-item>
@@ -16,7 +16,7 @@
         </v-list-item>
       </v-list-group>
 
-      <v-btn flat title="Simulador">Simulador</v-btn>
+      <v-btn flat @click="clickSimulator()" title="Simulador">Simulador</v-btn>
     </v-list>
   </v-navigation-drawer>
 
@@ -25,24 +25,35 @@
       @click="isDrowerOpen = !isDrowerOpen"
     ></v-app-bar-nav-icon>
 
-    <img src="../../assets/logoHome.png" alt="Logo do site" />
+    <img
+      @click="clickHome()"
+      src="../../assets/logoHome.png"
+      alt="Logo do site"
+    />
   </v-app-bar>
-
 </template>
 
 <script>
-
-
 export default {
-    data(){
+  data() {},
 
+  methods: {
+    clickProfessional() {
+      this.$router.push({ name: "ProfessionalAssembly" });
     },
 
-    methods: {
-     clickProfessional() {
-      this.$router.push({ name: "MontagemProfissional" });
+    clickGamer() {
+      this.$router.push({ name: "GamerAssembly" });
     },
-  }
+
+    clickHome() {
+      this.$router.push({ name: "Home" });
+    },
+
+    clickSimulator() {
+      this.$router.push({ name: "Simulator" });
+    },
+  },
 };
 </script>
 
