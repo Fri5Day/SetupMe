@@ -16,7 +16,9 @@ import Carousel from "../components/carousel/Home.vue";
 export default {
   components: { Navbar, Carousel },
   data() {
-
+    return {
+      
+    };
   },
 
 };
