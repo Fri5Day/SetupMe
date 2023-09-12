@@ -2,7 +2,7 @@
   <v-app>
     <Navbar />
     <v-main>
-      <v-container> 
+      <v-container class="mt-10"> 
         <Carousel />
       </v-container>
     </v-main>
