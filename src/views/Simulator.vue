@@ -1,5 +1,6 @@
 <template>
   <Navbar />
+  <h1 class="text-center mt-5">Monte do seu jeito</h1>
   <div>
     <v-row justify="center" align="center">
       <v-col class="mt-10" cols="12" sm="4" md="4" lg="3">
