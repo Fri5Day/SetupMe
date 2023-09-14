@@ -1,6 +1,5 @@
 module.exports = {
-    baseUrl: process.env.NODE_ENV === 'production'
-    ? '/bikeramp-front/'
-    : '/'
-    }
-    
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/SetupMe/'
+      : '/'
+  }
