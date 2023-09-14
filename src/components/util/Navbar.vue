@@ -16,7 +16,7 @@
         </v-list-item>
       </v-list-group>
 
-      <v-btn flat @click="clickSimulator()" title="Simulador">Simulador</v-btn>
+      <v-btn flat @click="clickSimulator()">Simulador</v-btn>
     </v-list>
   </v-navigation-drawer>
 
